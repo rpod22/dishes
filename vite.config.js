@@ -1,12 +1,13 @@
-import { defineConfig } from 'vite';
 import reactRefresh from '@vitejs/plugin-react-refresh';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [reactRefresh()],
   build: {
-    outDir: 'dist',
-    assetsDir: '',
-    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: './index.html',
+      },
+    },
   },
-  base: './',
 });
