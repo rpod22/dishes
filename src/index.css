@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #222222;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 5rem auto;
+}
+
+input, select, button {
+  padding: 3px;
+  border-radius: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 1.2rem;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.4s all ease;
+}
+
+
+
+input[type="time"] {
+  text-align: center;
+}
+
+label {
+  color: white;
+}
