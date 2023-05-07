@@ -1,22 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import reactRefresh from '@vitejs/plugin-react-refresh';
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  plugins: [reactRefresh()],
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
-    emptyOutDir: true
+    assetsDir: '',
+    emptyOutDir: true,
   },
-  base: '/dishes1/',
-  mode: 'production',
-  optimizeDeps: {
-    include: [
-      'react',
-      'react-dom',
-      'react-router-dom',
-      'react-scripts',
-      '@fortawesome/fontawesome-free/css/all.css'
-    ]
-  }
+  base: './',
 });
