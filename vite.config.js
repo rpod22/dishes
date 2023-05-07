@@ -1,8 +1,9 @@
-import reactRefresh from '@vitejs/plugin-react-refresh';
 import { defineConfig } from 'vite';
+import reactRefresh from '@vitejs/plugin-react-refresh';
+import html from 'vite-plugin-html';
 
 export default defineConfig({
-  plugins: [reactRefresh()],
+  plugins: [reactRefresh(), html()],
   build: {
     rollupOptions: {
       input: {
